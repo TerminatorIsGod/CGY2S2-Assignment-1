@@ -1,0 +1,393 @@
+{
+	"ambient": {
+		"x": 0.10000000149011612,
+		"y": 0.10000000149011612,
+		"z": 0.10000000149011612
+	},
+	"default_material": "null",
+	"lights": [
+		{
+			"color": {
+				"x": 1.0,
+				"y": 1.0,
+				"z": 1.0
+			},
+			"position": {
+				"x": 0.0,
+				"y": 1.0,
+				"z": 3.0
+			},
+			"range": 100.0
+		},
+		{
+			"color": {
+				"x": 0.20000000298023224,
+				"y": 0.800000011920929,
+				"z": 0.10000000149011612
+			},
+			"position": {
+				"x": 1.0,
+				"y": 0.0,
+				"z": 3.0
+			},
+			"range": 4.0
+		},
+		{
+			"color": {
+				"x": 1.0,
+				"y": 0.20000000298023224,
+				"z": 0.10000000149011612
+			},
+			"position": {
+				"x": 0.0,
+				"y": 1.0,
+				"z": 3.0
+			},
+			"range": 4.0
+		}
+	],
+	"main_camera": "063f6b8a-91a7-6e42-9b33-c9d4cd6a64f7",
+	"objects": [
+		{
+			"children": [],
+			"components": {
+				"Gameplay::Camera": {
+					"clear_color": {
+						"w": -431602080.0,
+						"x": -431602080.0,
+						"y": -431602080.0,
+						"z": -431602080.0
+					},
+					"enabled": true,
+					"far_plane": 1000.0,
+					"fov_radians": 1.5707963705062866,
+					"guid": "063f6b8a-91a7-6e42-9b33-c9d4cd6a64f7",
+					"near_plane": 0.10000000149011612,
+					"ortho_enabled": false,
+					"ortho_size": 10.0
+				},
+				"SimpleCameraControl": {
+					"enabled": true,
+					"guid": "bc5890ca-e2e1-764b-b38b-b531a47145ce",
+					"mouse_sensitivity": {
+						"x": 0.5,
+						"y": 0.30000001192092896
+					},
+					"move_speed": {
+						"x": 1.0,
+						"y": 1.0,
+						"z": 1.0
+					},
+					"shift_mult": 2.0
+				}
+			},
+			"guid": "0ab3f73a-fa5d-4343-a557-64b096ad66e3",
+			"hide_in_inspector": false,
+			"name": "Main Camera",
+			"parent": "null",
+			"position": {
+				"x": -9.0,
+				"y": -6.0,
+				"z": 15.0
+			},
+			"rotation": {
+				"w": 0.8390066623687744,
+				"x": 0.27095746994018555,
+				"y": -0.1450120359659195,
+				"z": -0.44902271032333374
+			},
+			"scale": {
+				"x": 1.0,
+				"y": 1.0,
+				"z": 1.0
+			}
+		},
+		{
+			"children": [],
+			"components": {
+				"Gameplay::Physics::RigidBody": {
+					"angular_damping": 0.004999999888241291,
+					"colliders": [
+						{
+							"extents": {
+								"x": 50.0,
+								"y": 50.0,
+								"z": 1.0
+							},
+							"guid": "ff5efc04-1667-5640-bf08-3b5ea51e5f32",
+							"position": {
+								"x": 0.0,
+								"y": 0.0,
+								"z": -1.0
+							},
+							"rotation": {
+								"x": 0.0,
+								"y": 0.0,
+								"z": 0.0
+							},
+							"scale": {
+								"x": 1.0,
+								"y": 1.0,
+								"z": 1.0
+							},
+							"type": "Box"
+						}
+					],
+					"enabled": true,
+					"group": 1,
+					"guid": "b282c85a-718d-cd48-9011-39db8150caa8",
+					"linear_damping": 0.0,
+					"mask": -1,
+					"mass": 1.0,
+					"type": "Static"
+				},
+				"RenderComponent": {
+					"enabled": true,
+					"guid": "35be87c3-657b-bf42-9057-40bed5cb5f21",
+					"material": "3eaa1875-48ff-4d4a-a142-3412fdfe0cca",
+					"mesh": "2cb1f6d2-748a-624d-94b5-b5addc41f801"
+				}
+			},
+			"guid": "e5ad4f78-c071-674e-8013-36f539025b99",
+			"hide_in_inspector": false,
+			"name": "Plane",
+			"parent": "null",
+			"position": {
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0
+			},
+			"rotation": {
+				"w": 1.0,
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0
+			},
+			"scale": {
+				"x": 1.0,
+				"y": 1.0,
+				"z": 1.0
+			}
+		},
+		{
+			"children": [],
+			"components": {
+				"Move": {
+					"enabled": true,
+					"guid": "bac7c2ee-2cf3-fa40-9af8-b1304272c1c0",
+					"impulse": 3.0
+				},
+				"RenderComponent": {
+					"enabled": true,
+					"guid": "2c319073-ef8c-7646-b771-5afe50bfdf45",
+					"material": "119d48d5-347f-cf41-b8f7-44ee799214e5",
+					"mesh": "c9c541d4-dbf3-854e-bffc-258bad1ac39b"
+				},
+				"TriggerVolumeEnterBehaviour": {
+					"enabled": true,
+					"guid": "1639be4b-60d6-b24b-8894-472b152a5722"
+				}
+			},
+			"guid": "b9b843a7-79d4-9e46-bcc0-24c474f8089f",
+			"hide_in_inspector": false,
+			"name": "Monkey 1",
+			"parent": "null",
+			"position": {
+				"x": 1.5,
+				"y": 0.0,
+				"z": 1.0
+			},
+			"rotation": {
+				"w": 1.0,
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0
+			},
+			"scale": {
+				"x": 1.0,
+				"y": 1.0,
+				"z": 1.0
+			}
+		},
+		{
+			"children": [
+				{
+					"children": [],
+					"components": {
+						"Move": {
+							"enabled": true,
+							"guid": "85a27259-80dd-f443-93c5-530ad3c214e4",
+							"impulse": 1.0
+						},
+						"RenderComponent": {
+							"enabled": true,
+							"guid": "0d0f7004-f720-0c40-8204-15ce28880674",
+							"material": "4307b2f1-a5f2-af47-be83-bdfd8306ca5a",
+							"mesh": "784b80fe-e945-8d43-976a-6cc2c421ea60"
+						}
+					},
+					"guid": "47ca91d9-db33-4344-a64b-b8fa92625f86",
+					"hide_in_inspector": false,
+					"name": "Specular Object",
+					"parent": "b5a31d5a-0d12-bf4c-848b-e28435b18ec6",
+					"position": {
+						"x": 0.0,
+						"y": -4.0,
+						"z": 1.0
+					},
+					"rotation": {
+						"w": 1.0,
+						"x": 0.0,
+						"y": 0.0,
+						"z": 0.0
+					},
+					"scale": {
+						"x": 1.0,
+						"y": 1.0,
+						"z": 1.0
+					}
+				},
+				{
+					"children": [],
+					"components": {
+						"Move": {
+							"enabled": true,
+							"guid": "92423e07-8006-e54c-8071-e31157e7dbf0",
+							"impulse": 2.0
+						},
+						"RenderComponent": {
+							"enabled": true,
+							"guid": "90407ac9-516c-0e4b-852c-440f2670e92c",
+							"material": "33541f67-863e-b74d-aec1-1dab9759a1ba",
+							"mesh": "82849b03-ed92-b543-bb5c-de4f22205554"
+						}
+					},
+					"guid": "973574b0-3dd0-8b4f-acaf-54cf366c589e",
+					"hide_in_inspector": false,
+					"name": "Toon Object",
+					"parent": "b5a31d5a-0d12-bf4c-848b-e28435b18ec6",
+					"position": {
+						"x": -2.0,
+						"y": -4.0,
+						"z": 3.0
+					},
+					"rotation": {
+						"w": 1.0,
+						"x": 0.0,
+						"y": 0.0,
+						"z": 0.0
+					},
+					"scale": {
+						"x": 1.0,
+						"y": 1.0,
+						"z": 1.0
+					}
+				}
+			],
+			"components": null,
+			"guid": "b5a31d5a-0d12-bf4c-848b-e28435b18ec6",
+			"hide_in_inspector": false,
+			"name": "Demo Parent",
+			"parent": "null",
+			"position": {
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0
+			},
+			"rotation": {
+				"w": 1.0,
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0
+			},
+			"scale": {
+				"x": 1.0,
+				"y": 1.0,
+				"z": 1.0
+			}
+		},
+		{
+			"children": [],
+			"components": {
+				"Move": {
+					"enabled": true,
+					"guid": "85a27259-80dd-f443-93c5-530ad3c214e4",
+					"impulse": 1.0
+				},
+				"RenderComponent": {
+					"enabled": true,
+					"guid": "0d0f7004-f720-0c40-8204-15ce28880674",
+					"material": "4307b2f1-a5f2-af47-be83-bdfd8306ca5a",
+					"mesh": "784b80fe-e945-8d43-976a-6cc2c421ea60"
+				}
+			},
+			"guid": "47ca91d9-db33-4344-a64b-b8fa92625f86",
+			"hide_in_inspector": false,
+			"name": "Specular Object",
+			"parent": "b5a31d5a-0d12-bf4c-848b-e28435b18ec6",
+			"position": {
+				"x": 0.0,
+				"y": -4.0,
+				"z": 1.0
+			},
+			"rotation": {
+				"w": 1.0,
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0
+			},
+			"scale": {
+				"x": 1.0,
+				"y": 1.0,
+				"z": 1.0
+			}
+		},
+		{
+			"children": [],
+			"components": {
+				"Move": {
+					"enabled": true,
+					"guid": "92423e07-8006-e54c-8071-e31157e7dbf0",
+					"impulse": 2.0
+				},
+				"RenderComponent": {
+					"enabled": true,
+					"guid": "90407ac9-516c-0e4b-852c-440f2670e92c",
+					"material": "33541f67-863e-b74d-aec1-1dab9759a1ba",
+					"mesh": "82849b03-ed92-b543-bb5c-de4f22205554"
+				}
+			},
+			"guid": "973574b0-3dd0-8b4f-acaf-54cf366c589e",
+			"hide_in_inspector": false,
+			"name": "Toon Object",
+			"parent": "b5a31d5a-0d12-bf4c-848b-e28435b18ec6",
+			"position": {
+				"x": -2.0,
+				"y": -4.0,
+				"z": 3.0
+			},
+			"rotation": {
+				"w": 1.0,
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0
+			},
+			"scale": {
+				"x": 1.0,
+				"y": 1.0,
+				"z": 1.0
+			}
+		}
+	],
+	"skybox": {
+		"mesh": "null",
+		"orientation": {
+			"w": 0.7071067690849304,
+			"x": 0.7071067690849304,
+			"y": 0.0,
+			"z": 0.0
+		},
+		"shader": "55b6fee6-9c7e-7c4e-8cbb-a12a44e75878",
+		"texture": "f6a2b6cc-9025-f74c-ad8c-fa7c5a38af40"
+	}
+}

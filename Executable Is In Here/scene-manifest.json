@@ -1,0 +1,497 @@
+{
+	"Texture1D": {
+		"e3d358b6-4ebf-f143-b5eb-377908c7a38f": {
+			"filename": "luts/toon-1D.png",
+			"filter_mag": "Linear",
+			"filter_min": "NearestMipLinear",
+			"generate_mipmaps": true,
+			"wrap_mode": "",
+			"guid": "e3d358b6-4ebf-f143-b5eb-377908c7a38f"
+		},
+		"3f95dc03-797f-2c44-8def-bdee2de36842": {
+			"filename": "luts/first-1D.png",
+			"filter_mag": "Linear",
+			"filter_min": "NearestMipLinear",
+			"generate_mipmaps": true,
+			"wrap_mode": "",
+			"guid": "3f95dc03-797f-2c44-8def-bdee2de36842"
+		},
+		"8727f026-4c9f-1249-b058-ca51f6071690": {
+			"filename": "luts/second-1D.png",
+			"filter_mag": "Linear",
+			"filter_min": "NearestMipLinear",
+			"generate_mipmaps": true,
+			"wrap_mode": "",
+			"guid": "8727f026-4c9f-1249-b058-ca51f6071690"
+		}
+	},
+	"Texture2D": {
+		"9d6ef109-f261-c847-ad3a-63fad5071265": {
+			"anisotropic": 16.0,
+			"filename": "textures/box-diffuse.png",
+			"filter_mag": "Linear",
+			"filter_min": "NearestMipLinear",
+			"generate_mipmaps": true,
+			"wrap_s": "Repeat",
+			"wrap_t": "Repeat",
+			"guid": "9d6ef109-f261-c847-ad3a-63fad5071265"
+		},
+		"73ba12d2-3946-f547-a714-a6ec3ac78fda": {
+			"anisotropic": 16.0,
+			"filename": "textures/box-specular.png",
+			"filter_mag": "Linear",
+			"filter_min": "NearestMipLinear",
+			"generate_mipmaps": true,
+			"wrap_s": "Repeat",
+			"wrap_t": "Repeat",
+			"guid": "73ba12d2-3946-f547-a714-a6ec3ac78fda"
+		},
+		"381eb956-eec1-994b-bce2-0fe3369d0ecb": {
+			"anisotropic": 16.0,
+			"filename": "textures/monkey-uvMap.png",
+			"filter_mag": "Linear",
+			"filter_min": "NearestMipLinear",
+			"generate_mipmaps": true,
+			"wrap_s": "Repeat",
+			"wrap_t": "Repeat",
+			"guid": "381eb956-eec1-994b-bce2-0fe3369d0ecb"
+		},
+		"b207c70f-fa72-eb47-bffe-f1af1dd607a4": {
+			"anisotropic": 16.0,
+			"filename": "textures/leaves.png",
+			"filter_mag": "Nearest",
+			"filter_min": "Nearest",
+			"generate_mipmaps": true,
+			"wrap_s": "Repeat",
+			"wrap_t": "Repeat",
+			"guid": "b207c70f-fa72-eb47-bffe-f1af1dd607a4"
+		},
+		"08c20546-1b62-2443-b984-bda26019f0e3": {
+			"anisotropic": 16.0,
+			"filename": "textures/ui-sprite.png",
+			"filter_mag": "Linear",
+			"filter_min": "NearestMipLinear",
+			"generate_mipmaps": true,
+			"wrap_s": "Repeat",
+			"wrap_t": "Repeat",
+			"guid": "08c20546-1b62-2443-b984-bda26019f0e3"
+		}
+	},
+	"Texture3D": {
+		"d53c0c7d-a59f-8449-8d45-5c25745f5909": {
+			"filename": "luts/default.CUBE",
+			"filter_mag": "Linear",
+			"filter_min": "NearestMipLinear",
+			"generate_mipmaps": true,
+			"wrap_r": "",
+			"wrap_s": "",
+			"wrap_t": "",
+			"guid": "d53c0c7d-a59f-8449-8d45-5c25745f5909"
+		}
+	},
+	"TextureCube": {
+		"f6a2b6cc-9025-f74c-ad8c-fa7c5a38af40": {
+			"face_filenames": {
+				"NegX": "A:\\school\\otter-stripped-master\\bin\\Debug-windows-x86_64\\CGAss1\\cubemaps\\ocean\\ocean_NegX.jpg",
+				"NegY": "A:\\school\\otter-stripped-master\\bin\\Debug-windows-x86_64\\CGAss1\\cubemaps\\ocean\\ocean_NegY.jpg",
+				"NegZ": "A:\\school\\otter-stripped-master\\bin\\Debug-windows-x86_64\\CGAss1\\cubemaps\\ocean\\ocean_NegZ.jpg",
+				"PosX": "A:\\school\\otter-stripped-master\\bin\\Debug-windows-x86_64\\CGAss1\\cubemaps\\ocean\\ocean_PosX.jpg",
+				"PosY": "A:\\school\\otter-stripped-master\\bin\\Debug-windows-x86_64\\CGAss1\\cubemaps\\ocean\\ocean_PosY.jpg",
+				"PosZ": "A:\\school\\otter-stripped-master\\bin\\Debug-windows-x86_64\\CGAss1\\cubemaps\\ocean\\ocean_PosZ.jpg"
+			},
+			"filter_mag": "Linear",
+			"filter_min": "NearestMipLinear",
+			"guid": "f6a2b6cc-9025-f74c-ad8c-fa7c5a38af40"
+		}
+	},
+	"ShaderProgram": {
+		"facedb53-97b4-734b-a677-ce683c3fd7dc": {
+			"Fragment": {
+				"path": "shaders/fragment_shaders/frag_environment_reflective.glsl"
+			},
+			"Vertex": {
+				"path": "shaders/vertex_shaders/basic.glsl"
+			},
+			"name": "Reflective",
+			"guid": "facedb53-97b4-734b-a677-ce683c3fd7dc"
+		},
+		"16e16601-5707-5e42-a3b3-d9ab8fb7fd66": {
+			"Fragment": {
+				"path": "shaders/fragment_shaders/frag_blinn_phong_textured.glsl"
+			},
+			"Vertex": {
+				"path": "shaders/vertex_shaders/basic.glsl"
+			},
+			"name": "Blinn-phong",
+			"guid": "16e16601-5707-5e42-a3b3-d9ab8fb7fd66"
+		},
+		"eeb9a75c-c284-eb43-8852-9578dc1eeb73": {
+			"Fragment": {
+				"path": "shaders/fragment_shaders/textured_blinn_thing.glsl"
+			},
+			"Vertex": {
+				"path": "shaders/vertex_shaders/basic.glsl"
+			},
+			"name": "Textured-Blinn-Thing",
+			"guid": "eeb9a75c-c284-eb43-8852-9578dc1eeb73"
+		},
+		"7cc500ba-b192-9848-93c6-890405f3b9c6": {
+			"Fragment": {
+				"path": "shaders/fragment_shaders/screendoor_transparency.glsl"
+			},
+			"Vertex": {
+				"path": "shaders/vertex_shaders/foliage.glsl"
+			},
+			"name": "Foliage",
+			"guid": "7cc500ba-b192-9848-93c6-890405f3b9c6"
+		},
+		"c6a34c54-723f-7848-9663-5385ac8716d6": {
+			"Fragment": {
+				"path": "shaders/fragment_shaders/toon_shading.glsl"
+			},
+			"Vertex": {
+				"path": "shaders/vertex_shaders/basic.glsl"
+			},
+			"name": "Toon Shader",
+			"guid": "c6a34c54-723f-7848-9663-5385ac8716d6"
+		},
+		"86596df7-634e-d44a-8b85-4e285d5d50d3": {
+			"Fragment": {
+				"path": "shaders/fragment_shaders/frag_tangentspace_normal_maps.glsl"
+			},
+			"Vertex": {
+				"path": "shaders/vertex_shaders/displacement_mapping.glsl"
+			},
+			"name": "Displacement Mapping",
+			"guid": "86596df7-634e-d44a-8b85-4e285d5d50d3"
+		},
+		"01ed83c9-4205-5646-b0e1-cc5044032a45": {
+			"Fragment": {
+				"path": "shaders/fragment_shaders/frag_tangentspace_normal_maps.glsl"
+			},
+			"Vertex": {
+				"path": "shaders/vertex_shaders/basic.glsl"
+			},
+			"name": "Tangent Space Mapping",
+			"guid": "01ed83c9-4205-5646-b0e1-cc5044032a45"
+		},
+		"d8bf1bc3-7d3e-f246-b128-bf9a0209dbb2": {
+			"Fragment": {
+				"path": "shaders/fragment_shaders/frag_multitextured.glsl"
+			},
+			"Vertex": {
+				"path": "shaders/vertex_shaders/vert_multitextured.glsl"
+			},
+			"name": "Multitexturing",
+			"guid": "d8bf1bc3-7d3e-f246-b128-bf9a0209dbb2"
+		},
+		"55b6fee6-9c7e-7c4e-8cbb-a12a44e75878": {
+			"Fragment": {
+				"path": "shaders/fragment_shaders/skybox_frag.glsl"
+			},
+			"Vertex": {
+				"path": "shaders/vertex_shaders/skybox_vert.glsl"
+			},
+			"name": "",
+			"guid": "55b6fee6-9c7e-7c4e-8cbb-a12a44e75878"
+		}
+	},
+	"Gameplay::Material": {
+		"3eaa1875-48ff-4d4a-a142-3412fdfe0cca": {
+			"guid": "3eaa1875-48ff-4d4a-a142-3412fdfe0cca",
+			"name": "Box",
+			"parameters": {
+				"u_Material.Diffuse": {
+					"type": "Tex2D",
+					"value": "9d6ef109-f261-c847-ad3a-63fad5071265"
+				},
+				"u_Material.Shininess": {
+					"type": "Float",
+					"value": 0.10000000149011612
+				}
+			},
+			"shader": "16e16601-5707-5e42-a3b3-d9ab8fb7fd66"
+		},
+		"119d48d5-347f-cf41-b8f7-44ee799214e5": {
+			"guid": "119d48d5-347f-cf41-b8f7-44ee799214e5",
+			"name": "Monkey",
+			"parameters": {
+				"doAmbient": {
+					"type": "Int",
+					"value": 0
+				},
+				"doDiffuseRamp": {
+					"type": "Int",
+					"value": 0
+				},
+				"doSpecRamp": {
+					"type": "Int",
+					"value": 0
+				},
+				"s_ToonTerm": {
+					"type": "Tex1D",
+					"value": "e3d358b6-4ebf-f143-b5eb-377908c7a38f"
+				},
+				"s_diffRamp": {
+					"type": "Tex1D",
+					"value": "8727f026-4c9f-1249-b058-ca51f6071690"
+				},
+				"s_specRamp": {
+					"type": "Tex1D",
+					"value": "3f95dc03-797f-2c44-8def-bdee2de36842"
+				},
+				"u_Material.Diffuse": {
+					"type": "Tex2D",
+					"value": "9d6ef109-f261-c847-ad3a-63fad5071265"
+				},
+				"u_Material.Shininess": {
+					"type": "Float",
+					"value": 0.5
+				},
+				"u_Material.Specular": {
+					"type": "Tex2D",
+					"value": "null"
+				}
+			},
+			"shader": "eeb9a75c-c284-eb43-8852-9578dc1eeb73"
+		},
+		"4307b2f1-a5f2-af47-be83-bdfd8306ca5a": {
+			"guid": "4307b2f1-a5f2-af47-be83-bdfd8306ca5a",
+			"name": "Box-Specular",
+			"parameters": {
+				"doAmbient": {
+					"type": "Int",
+					"value": 2
+				},
+				"doDiffuseRamp": {
+					"type": "Int",
+					"value": 0
+				},
+				"doSpecRamp": {
+					"type": "Int",
+					"value": 0
+				},
+				"s_ToonTerm": {
+					"type": "Tex1D",
+					"value": "e3d358b6-4ebf-f143-b5eb-377908c7a38f"
+				},
+				"s_diffRamp": {
+					"type": "Tex1D",
+					"value": "8727f026-4c9f-1249-b058-ca51f6071690"
+				},
+				"s_specRamp": {
+					"type": "Tex1D",
+					"value": "3f95dc03-797f-2c44-8def-bdee2de36842"
+				},
+				"u_Material.Diffuse": {
+					"type": "Tex2D",
+					"value": "9d6ef109-f261-c847-ad3a-63fad5071265"
+				},
+				"u_Material.Shininess": {
+					"type": "Float",
+					"value": 0.0
+				},
+				"u_Material.Specular": {
+					"type": "Tex2D",
+					"value": "73ba12d2-3946-f547-a714-a6ec3ac78fda"
+				}
+			},
+			"shader": "eeb9a75c-c284-eb43-8852-9578dc1eeb73"
+		},
+		"33541f67-863e-b74d-aec1-1dab9759a1ba": {
+			"guid": "33541f67-863e-b74d-aec1-1dab9759a1ba",
+			"name": "Toon",
+			"parameters": {
+				"doAmbient": {
+					"type": "Int",
+					"value": 0
+				},
+				"doDiffuseRamp": {
+					"type": "Int",
+					"value": 0
+				},
+				"doSpecRamp": {
+					"type": "Int",
+					"value": 0
+				},
+				"s_ToonTerm": {
+					"type": "Tex1D",
+					"value": "e3d358b6-4ebf-f143-b5eb-377908c7a38f"
+				},
+				"s_diffRamp": {
+					"type": "Tex1D",
+					"value": "8727f026-4c9f-1249-b058-ca51f6071690"
+				},
+				"s_specRamp": {
+					"type": "Tex1D",
+					"value": "3f95dc03-797f-2c44-8def-bdee2de36842"
+				},
+				"u_Material.Diffuse": {
+					"type": "Tex2D",
+					"value": "9d6ef109-f261-c847-ad3a-63fad5071265"
+				},
+				"u_Material.Shininess": {
+					"type": "Float",
+					"value": 0.10000000149011612
+				},
+				"u_Material.Specular": {
+					"type": "Tex2D",
+					"value": "null"
+				}
+			},
+			"shader": "eeb9a75c-c284-eb43-8852-9578dc1eeb73"
+		}
+	},
+	"Gameplay::MeshResource": {
+		"c9c541d4-dbf3-854e-bffc-258bad1ac39b": {
+			"filename": "Monkey.obj",
+			"guid": "c9c541d4-dbf3-854e-bffc-258bad1ac39b"
+		},
+		"a44f68d3-17d1-7b40-943d-a85014db4c04": {
+			"params": [
+				{
+					"color": {
+						"w": 1.0,
+						"x": 1.0,
+						"y": 1.0,
+						"z": 1.0
+					},
+					"params": {
+						"normal": {
+							"x": 0.0,
+							"y": 0.0,
+							"z": 1.0
+						},
+						"position": {
+							"x": 0.0,
+							"y": 0.0,
+							"z": 0.0
+						},
+						"scale": {
+							"x": 1.0,
+							"y": 1.0,
+							"z": 0.0
+						},
+						"tangent": {
+							"x": 1.0,
+							"y": 0.0,
+							"z": 0.0
+						},
+						"uv_scale": {
+							"x": 1.0,
+							"y": 1.0,
+							"z": 1.0
+						}
+					},
+					"type": "Plane"
+				}
+			],
+			"guid": "a44f68d3-17d1-7b40-943d-a85014db4c04"
+		},
+		"82849b03-ed92-b543-bb5c-de4f22205554": {
+			"params": [
+				{
+					"color": {
+						"w": 1.0,
+						"x": 1.0,
+						"y": 1.0,
+						"z": 1.0
+					},
+					"params": {
+						"position": {
+							"x": 0.0,
+							"y": 0.0,
+							"z": 0.0
+						},
+						"radius": {
+							"x": 1.0,
+							"y": 1.0,
+							"z": 1.0
+						},
+						"tessellation": {
+							"x": 5.0,
+							"y": 0.0,
+							"z": 0.0
+						}
+					},
+					"type": "IcoShere"
+				}
+			],
+			"guid": "82849b03-ed92-b543-bb5c-de4f22205554"
+		},
+		"2cb1f6d2-748a-624d-94b5-b5addc41f801": {
+			"params": [
+				{
+					"color": {
+						"w": 1.0,
+						"x": 1.0,
+						"y": 1.0,
+						"z": 1.0
+					},
+					"params": {
+						"normal": {
+							"x": 0.0,
+							"y": 0.0,
+							"z": 1.0
+						},
+						"position": {
+							"x": 0.0,
+							"y": 0.0,
+							"z": 0.0
+						},
+						"scale": {
+							"x": 100.0,
+							"y": 100.0,
+							"z": 0.0
+						},
+						"tangent": {
+							"x": 1.0,
+							"y": 0.0,
+							"z": 0.0
+						},
+						"uv_scale": {
+							"x": 20.0,
+							"y": 20.0,
+							"z": 1.0
+						}
+					},
+					"type": "Plane"
+				}
+			],
+			"guid": "2cb1f6d2-748a-624d-94b5-b5addc41f801"
+		},
+		"784b80fe-e945-8d43-976a-6cc2c421ea60": {
+			"params": [
+				{
+					"color": {
+						"w": 1.0,
+						"x": 1.0,
+						"y": 1.0,
+						"z": 1.0
+					},
+					"params": {
+						"position": {
+							"x": 0.0,
+							"y": 0.0,
+							"z": 0.0
+						},
+						"rotation": {
+							"x": 0.0,
+							"y": 0.0,
+							"z": 0.0
+						},
+						"scale": {
+							"x": 1.0,
+							"y": 1.0,
+							"z": 1.0
+						}
+					},
+					"type": "Cube"
+				}
+			],
+			"guid": "784b80fe-e945-8d43-976a-6cc2c421ea60"
+		}
+	},
+	"Font": null,
+	"Framebuffer": null
+}
